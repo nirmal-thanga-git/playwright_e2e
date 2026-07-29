@@ -1,0 +1,1 @@
+// Variable: Variable is the container which can hold / store some data.
