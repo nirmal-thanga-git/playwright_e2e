@@ -64,3 +64,28 @@ console.log(y) //output: 20
 
 //Example 3: const must be initialized at the time of declaration
 // const z  
+const z = 5
+console.log(z) //output: 5
+
+//3. Re-declaration
+
+//var allows the re-declaration
+// let and const - not allows the re-declaration (making the code safe)
+
+// By using var, we can re-declare within the scope
+var age = 30
+var age = 40
+console.log(age) //output: 40
+
+// we can re-declare the variable by using let and const outside the block scope but not inside the block scope
+let fruit = "apple"
+if(fruit == "apple") {
+let fruit = "banana"
+console.log(fruit) //output: banana
+}
+
+const ani = "dog"
+if(ani == "dog") {
+    const ani = "cat"
+    console.log(ani) //output: cat
+}
