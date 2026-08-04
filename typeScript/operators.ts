@@ -6,7 +6,7 @@
 Types of Operators in TypeScript:
 1. Arithmetic Operators
 2. Assignment Operators
-3. Comparison Operators
+3. Comparison/Relational Operators
 4. Logical Operators
 5. Bitwise Operators
 6. Ternary Operator
@@ -65,3 +65,19 @@ console.log(x *= 2) // output: 24 (x = x * 2)
 console.log(x /= 4) // output: 6 (x = x / 4)
 
 console.log(x %= 5) // output: 1 (x = x % 5)
+
+// 3. Comparison/Relational Operators:
+// Comparison operators are used to compare two values and return a boolean value (true or false) based on the comparison.
+
+// greater than >, less than <, greater than or equal to >=, less than or equal to <=, equal to ==, strict equal to ===, not equal to !=, strict not equal to !==
+
+let p: number = 10;
+let q: number = 20;
+console.log(p > q) // output: false
+console.log(p < q) // output: true
+console.log(p >= q) // output: false
+console.log(p <= q) // output: true
+console.log(p == q) // output: false
+console.log(q === p) // output: false
+console.log(p != q) // output: true
+console.log(q !== p) // output: true   

@@ -21,7 +21,8 @@ y = true // Error: Type 'boolean' is not assignable to type 'number'
 */
 
 // To run JS file - node <file_name>.js - need to add folder path if any - node javaScript/dataTypes.js
-// To run TS file - tsc <file_name>.ts - need to add folder path if any - tsc typeScript/dataTypes.ts
+// To compile TS file - tsc <file_name>.ts - need to add folder path if any - tsc typeScript/dataTypes.ts
+// To run TS file directly - tsx <file_name>.ts - need to add folder path if any - tsx typeScript/dataTypes.ts
 
 // when typescript is type safety, it means that the TypeScript compiler checks the types of variables and expressions in our code to ensure that they are used correctly. This helps us catch errors at compile time, before our code is executed, and write more robust and maintainable code.
 // you should explicitly specify the data type
