@@ -127,3 +127,4 @@ console.log(b) // output: 20
 const c = 30
 console.log(c) // output: 30
 
+export {} // to make this file a module and avoid global scope issues
