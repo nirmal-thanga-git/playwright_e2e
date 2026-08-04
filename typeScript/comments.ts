@@ -1,3 +1,3 @@
-// Single line comment - shortcut: control + /
+// Single line comment - shortcut: Command + /
 
-// Multi-line comment - shortcut: shift + option + /
+// Multi-line comment - shortcut: shift + alt + A

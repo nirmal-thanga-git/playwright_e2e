@@ -48,18 +48,18 @@ function letScope() {
 }
 letScope();
 
-//2. Declaration / Value Assignment
+//2. Declaration / Value Assignment (Initialization)
 
 //Example 1: var can be declared without initialization
 var x //declaration
 console.log(x) // undefined
-x=30 //initialization
+x = 30 //initialization
 console.log(x) //output: 30
 
 //Example 2: let can be declared without initialization
 let y //declaration
 console.log(y) // undefined
-y=20 //initialization
+y = 20 //initialization
 console.log(y) //output: 20
 
 //Example 3: const must be initialized at the time of declaration
@@ -72,20 +72,59 @@ console.log(z) //output: 5
 //var allows the re-declaration
 // let and const - not allows the re-declaration (making the code safe)
 
-// By using var, we can re-declare within the scope
+//Example 1: var allows the re-declaration
 var age = 30
 var age = 40
 console.log(age) //output: 40
 
+//Example 2: let and const - not allows the re-declaration within block
 // we can re-declare the variable by using let and const outside the block scope but not inside the block scope
 let fruit = "apple"
-if(fruit == "apple") {
-let fruit = "banana"
-console.log(fruit) //output: banana
+if (fruit == "apple") {
+    let fruit = "banana"
+    console.log(fruit) //output: banana
 }
 
 const ani = "dog"
-if(ani == "dog") {
+if (ani == "dog") {
     const ani = "cat"
     console.log(ani) //output: cat
 }
+
+//4. Re-initialization / Re-assignment
+// var and let allows the re-initialization / re-assignment
+// const - not allows the re-initialization / re-assignment
+
+//Example 1: var allows the re-initialization / re-assignment
+var num = 10
+num = 20
+console.log(num) //output: 20
+
+//Example 2: let allows the re-initialization / re-assignment
+let count = 5
+count = 15
+console.log(count) //output: 15
+
+//Example 3: const does not allow the re-initialization / re-assignment
+const pi = 3.14
+// pi = 3.14159 // This will throw an error: "Cannot assign to 'pi' because it is a constant."  
+
+//5. Hoisting
+//Example 1:
+// var (Hoisted with undefined)
+//console.log(a) // undefined
+var a = 10
+console.log(a) // output: 10
+
+//Example 2:
+// let and const (Hoisted but not initialized)
+// console.log(b) // not initialized
+let b = 20
+console.log(b) // output: 20
+
+//Example 3:
+// console.log(c) // not initialized
+const c = 30
+console.log(c) // output: 30
+
+export {} // to make this file a module and avoid global scope issues
