@@ -81,3 +81,5 @@ console.log(p == q) // output: false
 console.log(q === p) // output: false
 console.log(p != q) // output: true
 console.log(q !== p) // output: true   
+
+// 4. Logical Operators:
